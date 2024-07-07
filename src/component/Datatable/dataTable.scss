@@ -1,0 +1,95 @@
+
+
+.dataTable{
+    // width: 800px;
+        height: 450px;
+        padding: 20px;
+
+
+        .datatableTitle{
+            width: 100%;
+            font-size: 24px;
+            color:gray;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .DataTableLink{
+                color:green;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+
+
+        .cellwithIMG{
+            display: flex;
+            align-items: center;
+      
+
+        .cellIMG{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+    .cellwithStatus{
+        padding: 5px;
+        
+        font-weight: bold;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 10%;
+        width: 100px;
+        height: 35px;
+        
+        &.active{
+            background-color: rgb(148, 205, 149);
+            color:green;
+        }
+        &.pending{
+            background-color: rgb(199, 222, 143);
+            color:rgb(143, 143, 13);
+        }
+        &.passive{
+            background-color: rgb(235, 194, 194);
+            color:red;
+        }
+    }
+
+    .headerName{
+        text-align: center;
+        align-items: center;
+    }
+    .cellAction{
+        display: flex;
+        // align-items: center;
+        gap:15px;
+      
+        .ViewButton{
+            // padding:2px 5px;
+            // height: 40px;
+            // border-radius: 5px;
+            color:rgb(55, 55, 174);
+            // border: 1px dotted rgba(0,0,139,0.596);
+          cursor: pointer;
+        }
+        .DeleteButton{
+            // padding:2px 5px;
+            // height: 40px;
+            // border-radius: 5px;
+            color:rgb(149, 42, 42);
+            // border: 1px dotted rgba(220,20,60,0.5);
+            cursor: pointer;
+        }
+        
+    }
+}
+
